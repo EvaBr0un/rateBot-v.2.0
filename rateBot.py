@@ -49,7 +49,6 @@ start_page = """
 """
 
 dp = Dispatcher(bot)
-logging.basicConfig(level=logging.INFO)
 
 @dp.message_handler(commands="start")
 async def start_pg(message: types.Message):
