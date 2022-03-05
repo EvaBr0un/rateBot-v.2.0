@@ -58,8 +58,9 @@ async def start_pg(message: types.Message):
 async def aud(message: types.Message):
         try:
             await message.reply(exchange_rates.get_rate(currency_codes.index(message.text)))
-        except:
+        except Exception as e:
             await message.reply("Ошибка получения курса данной валюты. Для просмотра списка доступных валютных кодов - введите /start")
+            print(e)
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
