@@ -47,7 +47,7 @@ start_page = """
     /ZAR - 10 Южноафриканских рэндов
     /JPY - 100 Японских иен
 """
-error_msg =
+
 dp = Dispatcher(bot)
 logging.basicConfig(level=logging.INFO)
 
