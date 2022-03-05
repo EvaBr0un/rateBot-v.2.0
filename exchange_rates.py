@@ -11,7 +11,6 @@ def get_rate(code_ind):
         html_text = requests.get(url).text
     except:
         print("Error connecting to database!")
-        return -1
 
     tree = lxml.html.document_fromstring(html_text)
 
